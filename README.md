@@ -118,7 +118,8 @@ public class Main {
             }
         }
 
-        // 1. Считаем гласные и сумму ASCII по каждому столбцу 
+        // 1. Считаем гласные и сумму ASCII по каждому столбцу
+
         int[] vowels = new int[n];
         int[] sum = new int[n];
 
@@ -134,12 +135,14 @@ public class Main {
         }
 
         // 2. Номера столбцов 0, 1, 2, ..., n-1
+
         int[] order = new int[n];
         for (int j = 0; j < n; j++) {
             order[j] = j;
         }
 
-        // 3. Пузырьковая сортировка номеров 
+        // 3. Пузырьковая сортировка номеров
+
         for (int i = 0; i < n - 1; i++) {
             for (int k = 0; k < n - 1 - i; k++) {
 
@@ -165,7 +168,8 @@ public class Main {
             }
         }
 
-        // 4. Собираем новый массив 
+        // 4. Собираем новый массив
+
         char[][] sorted = new char[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -174,7 +178,8 @@ public class Main {
         }
         a = sorted;
 
-        // ПУНКТ 2: вывод отсортированной матрицы 
+        // ПУНКТ 2: вывод отсортированной матрицы
+
         System.out.println("Пункт 2 (сортировка). ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -183,7 +188,8 @@ public class Main {
             System.out.println();
         }
 
-        // ПУНКТ 3: самый частый символ без учёта регистра 
+        // ПУНКТ 3: самый частый символ без учёта регистра
+
         int[] count = new int[26];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -209,7 +215,8 @@ public class Main {
         }
         System.out.println();
 
-        // ПУНКТ 4: спираль от центра против часовой 
+        // ПУНКТ 4: спираль от центра против часовой
+
         System.out.println("Пункт 4 (элементы массива в виде спирали). ");
 
         int r, c;
@@ -247,7 +254,8 @@ public class Main {
         }
         System.out.println();
 
-        // ПУНКТ 5: шифрование (смена регистра) 
+        // ПУНКТ 5: шифрование (смена регистра)
+
         System.out.println("Пункт 5 (зашифрованный массив). ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
