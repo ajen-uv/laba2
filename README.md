@@ -196,9 +196,9 @@ public class Main {
             for (int j = 0; j < n; j++) {
                 char ch = a[i][j];
                 if (ch >= 'a' && ch <= 'z') {
-                    count[ch - 'a']++;          // строчная: 'a' = 97 → 0, 'z' = 122 → 25
+                    count[ch - 'a']++;          
                 } else if (ch >= 'A' && ch <= 'Z') {
-                    count[ch - 'A']++;         // заглавная: 'A' = 65 → 0, 'Z' = 90 → 25
+                    count[ch - 'A']++;         
                 }
             }
         }
