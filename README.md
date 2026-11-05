@@ -126,6 +126,7 @@ public class Main {
         for (int j = 0; j < n; j++) {
             for (int i = 0; i < n; i++) {
                 char ch = a[i][j];
+
                 if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'
                         || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
                     vowels[j]++;
@@ -241,14 +242,20 @@ public class Main {
                 c++; System.out.print(a[r][c] + " "); done++;
             }
             for (int s = 0; s < stepLen && done < total; s++) {
-                r--; System.out.print(a[r][c] + " "); done++;
+                r--;
+                System.out.print(a[r][c] + " ");
+                done++;
             }
             stepLen++;
             for (int s = 0; s < stepLen && done < total; s++) {
-                c--; System.out.print(a[r][c] + " "); done++;
+                c--;
+                System.out.print(a[r][c] + " ");
+                done++;
             }
             for (int s = 0; s < stepLen && done < total; s++) {
-                r++; System.out.print(a[r][c] + " "); done++;
+                r++;
+                System.out.print(a[r][c] + " ");
+                done++;
             }
             stepLen++;
         }
